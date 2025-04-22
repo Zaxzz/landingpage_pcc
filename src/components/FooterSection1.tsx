@@ -12,7 +12,7 @@ const FooterSection = () => {
           <span className="text-green-600">Polytechnic Computer Club</span>
         </h2>
         <p className="text-gray-500 mt-4">
-          "Menjadikan UKM PCC sebagai wadah yang inovatif, adaptif, solutif, serta mengamalkan 7-layers PCC sebagai landasan berorganisasi."
+          Menjadikan UKM PCC sebagai wadah yang inovatif, adaptif, solutif, serta mengamalkan 7-layers PCC sebagai landasan berorganisasi.
         </p>
   
   
