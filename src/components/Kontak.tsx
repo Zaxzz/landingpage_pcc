@@ -11,7 +11,6 @@ const Kontak = () => {
   return (
     <section className="py-20 bg-white" id="kontak">
       <div className="container mx-auto px-4">
-        {/* Teks judul dan deskripsi di luar box */}
         <motion.div
           className="text-center mb-12"
           variants={fadeUp}

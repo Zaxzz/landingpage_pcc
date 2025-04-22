@@ -1,4 +1,3 @@
-// src/components/Event.tsx
 import React from "react";
 import { PiUsersThreeLight, PiGlobeLight, PiChatsCircleLight } from "react-icons/pi";
 import * as motion from "motion/react-client"

@@ -3,7 +3,6 @@
 import React from "react";
 
 const Navbar = () => {
-  // fungsi scroll ke section berdasarkan ID
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {

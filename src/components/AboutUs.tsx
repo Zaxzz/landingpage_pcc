@@ -1,4 +1,3 @@
-// src/components/Testimoni.tsx
 import React from "react";
 import { PiUsersThreeLight, PiCalendarBlankLight, PiStarLight } from "react-icons/pi";
 import * as motion from "motion/react-client"

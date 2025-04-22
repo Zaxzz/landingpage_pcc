@@ -1,4 +1,3 @@
-// src/components/Footer.tsx
 import React from "react";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import * as motion from "motion/react-client"
@@ -17,7 +16,6 @@ const Footer = () => {
         viewport={{ once: true }}
         transition={{ staggerChildren: 0.2 }}
       >
-        {/* Kiri: Logo dan deskripsi */}
         <motion.div variants={fadeUp}>
           <img src="/images/logo_pcc.png" alt="logo" className="mb-4 h-8" />
           <p className="text-gray-300 text-sm">
@@ -30,7 +28,6 @@ const Footer = () => {
           </div>
         </motion.div>
 
-        {/* Center: Company */}
         <motion.div variants={fadeUp}>
           <h4 className="text-lg font-semibold mb-3">Company</h4>
           <ul className="space-y-2 text-sm text-gray-300">
@@ -42,7 +39,6 @@ const Footer = () => {
           </ul>
         </motion.div>
 
-        {/* Center: Support */}
         <motion.div variants={fadeUp}>
           <h4 className="text-lg font-semibold mb-3">Support</h4>
           <ul className="space-y-2 text-sm text-gray-300">
@@ -54,7 +50,6 @@ const Footer = () => {
           </ul>
         </motion.div>
 
-        {/* Kanan: Newsletter */}
         <motion.div variants={fadeUp}>
           <h4 className="text-lg font-semibold mb-3">Stay up to date</h4>
           <form className="flex items-center bg-white rounded-md overflow-hidden">

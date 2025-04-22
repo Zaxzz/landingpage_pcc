@@ -1,4 +1,3 @@
-// src/components/FooterSection.tsx
 import React from "react";
 import * as motion from "motion/react-client"
 const Visi = () => {
@@ -6,7 +5,6 @@ const Visi = () => {
     <section className="bg-gray-50 py-20">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
         
-        {/* Teks */}
         <motion.div
           className="flex-1"
           initial={{ opacity: 0, x: -50 }}
@@ -33,7 +31,6 @@ const Visi = () => {
           </div>
         </motion.div>
 
-        {/* Gambar */}
         <motion.img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/960px-FullMoon2010.jpg"
           alt="footer design"

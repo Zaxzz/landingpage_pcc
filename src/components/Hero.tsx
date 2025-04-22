@@ -1,4 +1,3 @@
-// src/components/Hero.tsx
 import React from "react";
 import * as motion from "motion/react-client"
 
@@ -28,7 +27,6 @@ const Hero = () => {
           </motion.button>
         </motion.div>
 
-        {/* Hero Image */}
         <motion.div
           className="flex-1"
           initial={{ opacity: 0, x: 100 }}
