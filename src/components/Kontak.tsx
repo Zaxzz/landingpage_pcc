@@ -4,23 +4,21 @@ import React from 'react'
 
 const Kontak = () => {
   return (
-    <section className="py-20 bg-base-200" id="kontak">
+    <section className="py-20 bg-white" id="kontak">
       <div className="container mx-auto px-4">
         {/* Teks judul dan deskripsi di luar box */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Hubungi Kami</h2>
-          <p className="text-base-content text-lg max-w-xl mx-auto">
-            Ada pertanyaan atau butuh informasi lebih lanjut? Silakan isi formulir di bawah ini.
+          <h2 className="text-4xl font-bold mb-4 text-[#0C2753]">Hubungi Kami</h2>
+          <p className="text-lg max-w-xl mx-auto text-[#0C2753] ">
+            Ada pertanyaan atau butuh informasi lebih lanjut? 
           </p>
         </div>
 
-        {/* Box form */}
         <div className="flex justify-center">
-          <div className="bg-base-100 p-8 rounded-box shadow w-full max-w-xl">
+          <div className="bg-[#0C2753] p-8 rounded-box shadow w-full max-w-xl">
             <form className="space-y-6">
-              {/* Nama */}
               <div>
-                <label htmlFor="nama" className="block text-sm font-medium mb-1">
+                <label htmlFor="nama" className="block text-sm font-medium mb-1 text-white">
                   Nama
                 </label>
                 <input
@@ -31,7 +29,6 @@ const Kontak = () => {
                 />
               </div>
 
-              {/* Email */}
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-1">
                   Email
@@ -44,7 +41,6 @@ const Kontak = () => {
                 />
               </div>
 
-              {/* Pesan */}
               <div>
                 <label htmlFor="pesan" className="block text-sm font-medium mb-1">
                   Pesan
@@ -56,8 +52,7 @@ const Kontak = () => {
                 ></textarea>
               </div>
 
-              {/* Tombol Submit */}
-              <button type="submit" className="btn btn-primary w-full">
+              <button type="submit" className="btn btn-primary w-full bg-blue-700  hover:bg-blue-500">
                 Kirim Pesan
               </button>
             </form>

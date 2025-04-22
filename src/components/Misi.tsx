@@ -2,7 +2,7 @@
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
-const UserTestimoni = () => {
+const Misi = () => {
   return (
     <section className="bg-white py-20">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
@@ -14,10 +14,16 @@ const UserTestimoni = () => {
 
 
         <div className="flex-1">
-        <h2 className="text-gray-800 text-2xl font-semibold leading-relaxed">
-          Misi <br />
-          <span className="text-green-600">Polytechnic Computer Club</span>
-        </h2>
+        <h2 className="text-2xl font-semibold leading-relaxed text-[#0C2753]">
+  <span className="inline-block bg-[#0C2753] px-4 py-2 rounded-none text-white">
+    Misi
+  </span>
+  <br />
+  <span className="text-[#0C2753]">
+    Polytechnic Computer Club
+  </span>
+</h2>
+
 
           <ul className="mt-6 space-y-4 text-gray-600">
             {[
@@ -40,4 +46,4 @@ const UserTestimoni = () => {
   );
 };
 
-export default UserTestimoni;
+export default Misi;

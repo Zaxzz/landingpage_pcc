@@ -2,9 +2,9 @@
 import React from "react";
 import { PiUsersThreeLight, PiCalendarBlankLight, PiStarLight } from "react-icons/pi";
 
-const Testimoni = () => {
+const AboutUs = () => {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-20" id="about">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/FullMoon2010.jpg/960px-FullMoon2010.jpg"
@@ -12,11 +12,14 @@ const Testimoni = () => {
           className="w-full md:w-1/2"
         />
         <div className="flex-1">
-          <h2 className="text-gray-800 text-2xl font-semibold leading-relaxed">
-          About Us <br />
-            <span className="text-green-600">Polytechnic Computer Club</span>
-          </h2>
-          <p className="text-gray-500 mt-4">
+        <h2 className="text-[#0C2753] text-3xl font-bold leading-relaxed">
+  <span className="underline decoration-2 underline-offset-4">
+    About Us
+  </span> <br />
+  <span className="text-[#0C2753]">Polytechnic Computer Club</span>
+</h2>
+
+          <p className="text-[#0C2753] mt-4">
           UKM Polytechnic Computer Club yang disingkat UKM PCC merupakan salah satu Unit Kegiatan Mahasiswa di Politeknik Negeri Semarang yang sudah cukup berumur. Dalam kiprahnya UKM PCC memberikan banyak kontribusi kepada institusi POLINES sendiri lewat prestasi-prestasi yang telah diraih oleh UKM PCC.
           </p>
           <div className="grid grid-cols-2 gap-6 mt-8">
@@ -33,7 +36,7 @@ const Testimoni = () => {
 
 const Stat = ({ icon, value, label }: { icon: React.ReactNode; value: string; label: string }) => (
   <div className="flex items-center gap-4">
-    <div className="text-green-600">{icon}</div>
+    <div className="text-[#0C2753]">{icon}</div>
     <div>
       <p className="text-xl font-semibold text-gray-800">{value}</p>
       <p className="text-sm text-gray-500">{label}</p>
@@ -41,4 +44,4 @@ const Stat = ({ icon, value, label }: { icon: React.ReactNode; value: string; la
   </div>
 );
 
-export default Testimoni;
+export default AboutUs;

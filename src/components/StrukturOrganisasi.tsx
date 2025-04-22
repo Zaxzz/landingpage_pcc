@@ -19,11 +19,11 @@ const articles = [
   },
 ];
 
-const BlogSection = () => {
+const StrukturOrganisasi = () => {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-white py-20" id="struktur">
       <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4">Struktur Organisasi</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-4">Struktur Organisasi</h2>
         <p className="text-gray-500 mb-10 max-w-2xl mx-auto">
   Susunan struktur organisasi PCC dibuat agar setiap divisi dapat berkolaborasi dengan baik dan menjalankan tugasnya sesuai tanggung jawab demi tercapainya tujuan bersama.
 </p>
@@ -47,4 +47,4 @@ const BlogSection = () => {
   );
 };
 
-export default BlogSection;
+export default StrukturOrganisasi;

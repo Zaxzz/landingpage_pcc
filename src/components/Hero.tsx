@@ -7,15 +7,16 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-12ml-[2rem]">
         {/* Left Side */}
         <div className="flex-1 ml-[6rem]">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#0C2753] leading-tight">
           SHARE YOUR KNOWLEDGE!<br />
-            <span className="text-green-600"> - PCC -</span>
+          <span className="text-[#0C2753]"> - PCC -</span>
+
           </h1>
-          <p className="text-gray-500 mt-6">
-            Where to grow your business as a photographer: site or social media?
+          <p className="text-[#0C2753] mt-6">
+          Wadah berbagi pengetahuan, pengalaman, dan inspirasi antar anggota untuk tumbuh bersama dalam dunia teknologi.
           </p>
-          <button className="mt-8 bg-blue-800 text-white px-6 py-3 rounded hover:bg-green-700">
-            Register
+          <button className="mt-8 bg-[#0C2753] text-white px-6 py-3 rounded hover:bg-blue-700">
+            Bergabung
           </button>
         </div>
         <div className="flex-1">
