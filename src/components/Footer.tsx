@@ -1,13 +1,24 @@
 // src/components/Footer.tsx
 import React from "react";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import * as motion from "motion/react-client"
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const Footer = () => {
   return (
     <footer className="bg-[#0C2753] text-white py-16">
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <motion.div
+        className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-10"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ staggerChildren: 0.2 }}
+      >
         {/* Kiri: Logo dan deskripsi */}
-        <div>
+        <motion.div variants={fadeUp}>
           <img src="/images/logo_pcc.png" alt="logo" className="mb-4 h-8" />
           <p className="text-gray-300 text-sm">
             Copyright © {new Date().getFullYear()} Nexcent. All rights reserved.
@@ -17,10 +28,10 @@ const Footer = () => {
             <Twitter className="w-5 h-5 text-white hover:text-blue-700 cursor-pointer" />
             <Instagram className="w-5 h-5 text-white hover:text-blue-700 cursor-pointer" />
           </div>
-        </div>
+        </motion.div>
 
         {/* Center: Company */}
-        <div>
+        <motion.div variants={fadeUp}>
           <h4 className="text-lg font-semibold mb-3">Company</h4>
           <ul className="space-y-2 text-sm text-gray-300">
             <li><a href="#" className="hover:underline">About Us</a></li>
@@ -29,10 +40,10 @@ const Footer = () => {
             <li><a href="#" className="hover:underline">Pricing</a></li>
             <li><a href="#" className="hover:underline">Testimonials</a></li>
           </ul>
-        </div>
+        </motion.div>
 
         {/* Center: Support */}
-        <div>
+        <motion.div variants={fadeUp}>
           <h4 className="text-lg font-semibold mb-3">Support</h4>
           <ul className="space-y-2 text-sm text-gray-300">
             <li><a href="#" className="hover:underline">Help Center</a></li>
@@ -41,10 +52,10 @@ const Footer = () => {
             <li><a href="#" className="hover:underline">Privacy Policy</a></li>
             <li><a href="#" className="hover:underline">Status</a></li>
           </ul>
-        </div>
+        </motion.div>
 
         {/* Kanan: Newsletter */}
-        <div>
+        <motion.div variants={fadeUp}>
           <h4 className="text-lg font-semibold mb-3">Stay up to date</h4>
           <form className="flex items-center bg-white rounded-md overflow-hidden">
             <input
@@ -59,8 +70,8 @@ const Footer = () => {
               Send
             </button>
           </form>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </footer>
   );
 };
