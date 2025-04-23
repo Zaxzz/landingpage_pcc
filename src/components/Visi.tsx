@@ -21,7 +21,7 @@ const Visi = () => {
           </p>
           <div className="mt-6">
             <motion.button
-              className="bg-[#0C2753] text-white px-6 py-3 rounded-lg hover:bg-blue-800"
+              className="bg-[#0C2753] text-white px-6 py-3 rounded-lg hover:bg-[#1c4587]"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 300 }}

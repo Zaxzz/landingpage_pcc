@@ -7,9 +7,9 @@ import Divisi from '../components/Divisi'
 import AboutUs from '../components/AboutUs'
 import Visi from '../components/Visi'
 import Misi from '../components/Misi'
-import StrukturOrganisasi from '../components/StrukturOrganisasi'
 import Event from '../components/Event'
 import Footer from '../components/Footer'
+import Struktur from '../components/Struktur'
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
       <AboutUs />
       <Visi />
       <Misi />
-      <StrukturOrganisasi />
+      <Struktur/>
       <Event />
       <Kontak/>
       <Footer/> 
