@@ -3,8 +3,7 @@ import * as motion from "motion/react-client";
 
 const Hero = () => {
   return (
-    <section className="relative bg-gray-50 py-20 overflow-hidden pt-30">
-      {/* 🌊 Gelombang layer 1 (statis) */}
+    <section className="relative bg-gray-50 py-20 overflow-hidden pt-30" id="home">
       <svg
         className="absolute bottom-0 left-0 w-full h-[400px] z-0"
         viewBox="0 0 1440 320"
@@ -17,14 +16,13 @@ const Hero = () => {
         />
       </svg>
 
-      {/* 🌊 Gelombang layer 2 (bergerak) */}
       <motion.svg
-        className="absolute bottom-0 left-0 w-full h-[400px] z-0"
+        className="absolute -bottom-10 left-0 w-full h-[600px] z-0"
         viewBox="0 0 1440 320"
         preserveAspectRatio="none"
         initial={{ y: 0 }}
         animate={{ y: [0, 15, -10, 0] }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >
         <path
           fill="#bfdbfe"
@@ -63,7 +61,6 @@ const Hero = () => {
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 1 }}
 >
-  {/* 🪐 Cincin animasi */}
   <motion.div
     className="absolute w-[250px] h-[250px] rounded-full border border-dashed border-[#0C2753] opacity-70"
     style={{
@@ -80,7 +77,6 @@ const Hero = () => {
     }}
   />
 
-  {/* 🖼️ Logo */}
   <img
     src="/images/logo_pcc.png"
     alt="Hero illustration"
