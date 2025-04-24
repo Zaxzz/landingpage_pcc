@@ -38,7 +38,7 @@ const Navbar = () => {
 
         <ul className="hidden md:flex items-center gap-8 text-sm text-white ml-auto pr-4">
           <li><button onClick={() => scrollToSection("home")} className="hover:underline">Home</button></li>
-          <li><button onClick={() => scrollToSection("about")} className="hover:underline">About Us</button></li>
+          <li><button onClick={() => scrollToSection("about")} className="hover:underline">About us</button></li>
           <li><button onClick={() => scrollToSection("struktur")} className="hover:underline">Struktur</button></li>
           <li><button onClick={() => scrollToSection("event")} className="hover:underline">Event</button></li>
           <li><button onClick={() => scrollToSection("kontak")} className="hover:underline">Kontak</button></li>
