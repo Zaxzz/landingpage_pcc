@@ -55,7 +55,7 @@ const Navbar = () => {
             className="md:hidden bg-[#0C2753] text-white text-sm px-4 py-2 space-y-2"
           >
             <li><button onClick={() => scrollToSection("home")} className="block w-full text-left">Home</button></li>
-            <li><button onClick={() => scrollToSection("about")} className="block w-full text-left">About Us</button></li>
+            <li><button onClick={() => scrollToSection("about")} className="block w-full text-left">About us</button></li>
             <li><button onClick={() => scrollToSection("struktur")} className="block w-full text-left">Struktur</button></li>
             <li><button onClick={() => scrollToSection("event")} className="block w-full text-left">Event</button></li>
             <li><button onClick={() => scrollToSection("kontak")} className="block w-full text-left">Kontak</button></li>
