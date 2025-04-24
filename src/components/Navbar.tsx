@@ -19,7 +19,11 @@ const Navbar = () => {
     <nav className="w-full py-3 bg-[#0C2753] shadow-sm fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center gap-2 ml-2 sm:ml-10">
-          <img src="/images/logo_pcc.png" alt="logo" className="h-12 w-auto" />
+        <button
+          onClick={() => scrollToSection("home")}
+           className="flex items-center gap-2 ml-2 sm:ml-10">
+           <img src="/images/logo_pcc.png" alt="logo" className="h-12 w-auto" />
+        </button>
         </div>
 
        
